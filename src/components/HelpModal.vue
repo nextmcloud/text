@@ -1,5 +1,5 @@
 <template>
-	<NcModal size="normal"
+	<NcModal id="text-app" size="normal"
 		data-text-el="formatting-help"
 		:title="t('text', 'Formatting help')"
 		@close="$emit('close')">

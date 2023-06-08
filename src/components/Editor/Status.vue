@@ -24,7 +24,6 @@
 	<div class="text-editor__session-list">
 		<div v-if="$isMobile" v-tooltip="lastSavedStatusTooltip" :class="saveStatusClass" />
 		<div v-else
-			v-tooltip="lastSavedStatusTooltip"
 			class="save-status"
 			:aria-label="t('text', 'Document save status')"
 			:class="lastSavedStatusClass">
