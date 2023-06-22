@@ -112,3 +112,413 @@ li.ProseMirror-selectednode {
 .fadeInLeft {
 	animation-name: fadeInLeft;
 }
+
+// css for text app styling changes 
+.arrow-u-left-top-icon {
+	background-image: var(--icon-backward-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.arrow-u-right-top-icon{
+	background-image: var(--icon-forward-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.format-bold-icon {
+	background-image: var(--icon-bold-custom);
+	background-repeat: no-repeat;
+	margin-left: 1rem;
+	&:hover{
+		filter: var(--color-background-magenta);
+	}
+}
+
+.format-italic-icon {
+	background-image: var(--icon-italic-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+	}
+}
+
+.format-underline-icon {
+	background-image: var(--icon-underline-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+	}
+}
+
+.format-strikethrough-icon {
+	background-image: var(--icon-strike-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+	}
+}
+
+.action-menu-headings { 
+	background: transparent;
+	margin-right: 1rem;
+	&:hover {
+		filter: var(--color-background-magenta);
+	}
+}
+
+.format-header1-icon {
+	background-image: var(--icon-h1-custom);
+	background-repeat: no-repeat;
+}
+
+.format-header2-icon {
+	background-image: var(--icon-h2-custom);
+	background-repeat: no-repeat;
+}
+
+.format-header3-icon {
+	background-image: var(--icon-h3-custom);
+	background-repeat: no-repeat;
+}
+
+.format-header4-icon {
+	background-image: var(--icon-h4-custom);
+	background-repeat: no-repeat;
+}
+
+.format-header5-icon {
+	background-image: var(--icon-h5-custom);
+	background-repeat: no-repeat;
+}
+
+.format-header6-icon {
+	background-image: var(--icon-h6-custom);
+	background-repeat: no-repeat;
+}
+
+.format-list-bulleted-icon {
+	background-image: var(--icon-ul-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.format-list-numbered-icon {
+	background-image: var(--icon-ol-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.format-list-checkbox-icon {
+	background-image: var(--icon-tasklist-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.format-quote-close-icon {
+	background-image: var(--icon-quote-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.code-tags-icon {
+	background-image: var(--icon-code-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.action-menu-callouts {
+	display: none !important;
+}
+
+.emoticon-outline-icon {
+	background-image: var(--icon-emoji-custom);
+	background-repeat: no-repeat;
+	margin-right: 0.5rem;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.image-multiple-outline-icon {
+	background-image: var(--icon-image-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.table-icon {
+	background-image: var(--icon-table-custom);
+	background-repeat: no-repeat;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.link-icon {
+	background-image: var(--icon-link-text);
+	background-repeat: no-repeat;
+}
+
+.menububble .file-document-icon {
+    background-image: var(--icon-file-text);
+	background-repeat: no-repeat;
+}
+
+.menububble .delete-icon {
+	background-image: var(--original-icon-delete-dark);
+	background-repeat: no-repeat;
+}
+
+.text-menubar button.button-vue:hover:not(:disabled) {
+	background-color: unset !important;
+	&:hover {
+		background-color: unset !important;
+	}
+}
+
+.button-vue--vue-tertiary:hover:not(:disabled) {
+	background-color: unset !important;
+}
+
+.tippy-content .menububble__button:hover span {
+    color: var(--magenta-color);
+    filter: var(--color-background-magenta) !important;
+}
+
+.tippy-content button.menububble__button:hover {
+	background-color: unset;
+	border-right: 1px solid #ededed;
+}
+
+.tippy-content .menububble .link-icon, .tippy-content .menububble .file-document-icon, .tippy-content .menububble .delete-icon {
+    min-width: 1rem;
+    min-height: 1rem;
+    background-size: 1rem;
+}
+
+.editor .menububble__button .menububble__buttontext {
+    font-size: 0.8125rem;
+	background-color: unset;
+}
+
+div.tippy-box path {
+	display: none;
+}
+
+.menububble form .menububble__button .check-icon {
+	background-image: var(--icon-forward-custom);
+	background-repeat: no-repeat;
+}
+
+.upload-icon {
+	background-image: var(--icon-upload-dark);
+	background-repeat: no-repeat;
+}
+
+.folder-icon { 
+	background-image: var(--original-icon-folder-dark);
+	background-repeat: no-repeat;
+}
+
+.text-editor__wrapper .v-popper__popper button.action-button {
+	padding-right: unset;
+}
+
+.help-circle-icon {
+	background-image: var(--icon-help-custom);
+	background-repeat: no-repeat;
+	margin-left: 1rem;
+	&:hover {
+		filter: var(--color-background-magenta);
+		background-color: transparent;
+	}
+}
+
+.text-menubar__entries .button-vue--icon-only.button-vue--vue-tertiary .material-design-icon,
+.text-menubar__entries .button-vue--icon-only.button-vue--vue-secondary .material-design-icon {
+	width: 39px !important;
+	height: 24px !important;
+	min-height: 24px;
+	min-width: 24px;
+	background-size: unset !important;
+	opacity: unset !important;
+	padding: 0px !important;
+}
+
+.text-menubar .material-design-icon__svg path {
+	 display: none;
+}
+
+.action-button .material-design-icon {
+	width: 24px !important;
+	height: 24px !important;
+	margin-right: 8px;
+	background-size: 24px !important;
+}
+
+.text-menubar .button-vue {
+	opacity: unset !important;
+}
+
+.text-menubar .entry-action.is-active:not(.entry-action-item) {
+	background-color: unset !important;
+}
+
+.text-editor .action-item__popper .v-popper__inner {
+	box-shadow: var(--scl-shadow-level-2);
+	padding: 0.813rem 1rem !important;
+	border-radius: 8px;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.action-item.action-item--open button.action-item__menutoggle {
+	background-color: unset !important;
+	
+}
+
+.text-menubar .entry-action.entry-action-item.is-active,
+.v-popper__inner .entry-action.entry-action-item.is-active {
+	background-color: unset !important;
+	border-radius: unset !important
+}
+
+.text-menubar li.active {
+	background-color: unset !important;	
+}
+
+.text-menubar .open>ul {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	flex-direction: column !important;
+}
+
+.text-menubar .action-button:hover {
+	filter: var(--color-background-magenta) !important;
+	color: var(--magenta-color) !important;
+}
+
+button:not(.button-vue, [class^=vs__]):not(:disabled):not(.primary):active {
+	background-color: unset !important;
+}
+
+.text-editor__content-wrapper .ProseMirror .dots-horizontal-icon:hover {
+	filter: var(--color-background-magenta);
+	color: var(--magenta-color);
+}
+
+.text-editor__content-wrapper .ProseMirror table tr:hover {
+	background-color: var(--color-background-dark) !important;
+}
+
+.entry-action.entry-action__emoji button:hover {
+	background: unset !important;
+}
+
+.table-settings {
+	margin-top: 1rem;
+	background-color: unset !important;
+}
+
+.text-editor__content-wrapper.ProseMirror.v-popper.v-popper--theme-dropdown {
+	color: #2222 !important;
+}
+
+.table-cog-icon {
+	background-image: var(--icon-table-settings-custom) !important;
+	background-repeat: no-repeat ;
+	&:hover {
+		filter: var(--color-background-magenta) !important;
+		background-color: transparent !important
+	}
+}
+
+.avatar-list {
+	display: none !important;
+}
+
+.text-editor__content .dots-horizontal-icon {
+	background-image: var(--original-icon-more-dark) !important;
+	background-repeat: no-repeat  !important;
+}
+
+.entry-list-action .dots-horizontal-icon {
+	background-image: var(--original-icon-more-dark) !important;
+	background-repeat: no-repeat  !important;
+}
+
+.text-editor__content .table-cog-icon path {
+	display: none ;
+}
+
+.text-editor__content .dots-horizontal-icon path {
+	display: none ;
+}
+
+.table-cog-icon {
+    width: 24px !important;
+    height: 24px !important;
+	background-size: unset !important;
+	opacity: unset !important;
+	min-height: unset !important;
+}
+
+.text-menubar .v-popper__inner li:hover span {
+	color: var(--magenta-color) !important;
+    filter: var(--color-background-magenta);
+}
+
+.is-active.action-menu-headings .material-design-icon {
+	color:var(--magenta-color) !important;
+	filter: var(--color-background-magenta);
+}
+
+.entry-single-action.is-active .material-design-icon {
+	filter: var(--color-background-magenta) !important;
+	background-color: transparent;
+}
+
+#text-app .modal-header {
+  display: none !important;
+}
+
+@media only screen and (max-width: 480px) {
+	.format-bold-icon,.help-circle-icon  {
+		margin-left: unset;
+	}
+
+	.text-menubar .v-popper__inner .open > ul {
+		align-items: flex-start !important;
+		display: flex;	
+		flex-direction: column;	
+	}
+
+}

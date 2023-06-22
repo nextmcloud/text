@@ -806,7 +806,6 @@ export default {
 <style lang="scss">
 	@import './../../css/style';
 	@import './../../css/print';
-	@import './../../css/text.scss';
 
 	.text-editor__wrapper {
 		@import './../../css/prosemirror';
