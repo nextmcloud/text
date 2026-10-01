@@ -12,27 +12,39 @@ const workspaceAvailable = loadState('text', 'workspace_available')
 const workspaceEnabled = loadState('text', 'workspace_enabled')
 const openReadOnlyEnabled = loadState('text', 'open_read_only_enabled')
 
-document.addEventListener('DOMContentLoaded', async () => {
-	if (workspaceAvailable && window.OCA.Files?.Settings) {
-		const { default: Vue, defineAsyncComponent } = await import('vue')
-		const FilesSettings = defineAsyncComponent(
-			() => import('./views/FilesSettings.vue'),
-		)
-		const vm = new Vue({
-			render: (h) => h(FilesSettings, {}),
-		})
-		const el = vm.$mount().$el
-		window.OCA.Files.Settings.register(
-			new window.OCA.Files.Settings.Setting('text', {
-				el: () => {
-					return el
-				},
-			}),
-		)
+const registerFilesSettings = async () => {
+	if (!workspaceAvailable || !window.OCA?.Files?.Settings) {
+		return
 	}
-})
 
-OCA.Text = {
+	const { default: Vue } = await import('vue')
+	const { default: FilesSettings } = await import('./views/FilesSettings.vue')
+
+	const vm = new Vue({
+		render: (h) => h(FilesSettings, {}),
+	})
+
+	const el = vm.$mount().$el
+
+	window.OCA.Files.Settings.register(
+		new window.OCA.Files.Settings.Setting('text', {
+			el: () => el,
+		}),
+	)
+}
+
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', registerFilesSettings, {
+		once: true,
+	})
+} else {
+	registerFilesSettings()
+}
+
+window.OCA = window.OCA || {}
+
+window.OCA.Text = {
+	...(window.OCA.Text || {}),
 	RichWorkspaceEnabled: workspaceEnabled,
 	OpenReadOnlyEnabled: openReadOnlyEnabled,
 }
